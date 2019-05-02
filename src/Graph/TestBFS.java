@@ -30,10 +30,16 @@ public class TestBFS {
 
         java.util.List<Integer> searchOrders = bfs.getSearchOrders();
 
-        for(int i=0; i<searchOrders.size(); i++) {
+        for (int i=0; i<searchOrders.size(); i++) {
             System.out.println(graph.getVertices(searchOrders.get(i)));
         }
 
+
+        for (int i=0; i<searchOrders.size(); i++) {
+            if(bfs.getParent(i) != -1) {
+                System.out.println("parent of "+ graph.getVertices(i)+ " is "+ graph.getVertices(bfs.getParent(i)));
+            }
+        }
 
 
     }

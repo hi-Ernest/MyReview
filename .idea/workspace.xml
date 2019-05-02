@@ -1,24 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/Graph/AbstractGraph.java" line="32" />
+    <bookmark url="file://$PROJECT_DIR$/src/Graph/AbstractGraph.java" line="31" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e93e93c5-b18d-414c-8507-576a636aa0f9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MyReview.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyReview/AbstractGraph$Edge.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyReview/AbstractGraph$Tree.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyReview/AbstractGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyReview/Graph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyReview/TestBFS.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/out/production/MyReview/UnweightedGraph.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/AbstractGraph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/Graph.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/TestBFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Graph/UnweightedGraph.java" afterDir="false" />
+    <list default="true" id="e93e93c5-b18d-414c-8507-576a636aa0f9" name="Default Changelist" comment="数据结构-图">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyReview/Graph/AbstractGraph$Edge.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyReview/Graph/AbstractGraph$Tree.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyReview/Graph/AbstractGraph.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyReview/Graph/TestBFS.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/MyReview/Graph/UnweightedGraph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyReview/AbstractGraph$Edge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyReview/AbstractGraph$Tree.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyReview/AbstractGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyReview/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MyReview/Graph/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyReview/TestBFS.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MyReview/UnweightedGraph.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/AbstractGraph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/AbstractGraph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/Graph.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/Graph.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Graph/TestBFS.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Graph/TestBFS.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -38,8 +41,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/Graph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="90">
+              <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
             </state>
           </provider>
         </entry>
@@ -47,10 +50,11 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Graph/AbstractGraph.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="198">
-              <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+            <state relative-caret-position="935">
+              <caret line="153" column="15" selection-start-line="153" selection-start-column="15" selection-end-line="153" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#dfs#0;class#AbstractGraph#0" />
                 <element signature="method#dfs#1;class#AbstractGraph#0" />
                 <element signature="method#Tree#1;class#Tree#0;class#AbstractGraph#0" />
                 <element signature="e#5118#5119#0" expanded="true" />
@@ -68,15 +72,6 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Graph/TestBFS.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="126">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Graph/UnweightedGraph.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,6 +83,15 @@
                 <element signature="e#339#340#0" expanded="true" />
                 <element signature="e#377#378#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/Graph/TestBFS.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
             </state>
           </provider>
         </entry>
@@ -118,7 +122,9 @@
         <option value="$PROJECT_DIR$/src/AbstractGraph.java" />
         <option value="$PROJECT_DIR$/src/Graph.java" />
         <option value="$PROJECT_DIR$/src/TestBFS.java" />
+        <option value="$PROJECT_DIR$/src/Graph/AbstractGraph.java" />
         <option value="$PROJECT_DIR$/src/Graph/TestBFS.java" />
+        <option value="$PROJECT_DIR$/src/Graph/Graph.java" />
       </list>
     </option>
   </component>
@@ -146,6 +152,12 @@
               <item name="MyReview" type="b2602c69:ProjectViewProjectNode" />
               <item name="MyReview" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="MyReview" type="b2602c69:ProjectViewProjectNode" />
+              <item name="MyReview" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="Graph" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -205,12 +217,20 @@
       <workItem from="1556636891061" duration="12537000" />
       <workItem from="1556693518780" duration="820000" />
       <workItem from="1556694364472" duration="3664000" />
-      <workItem from="1556776994063" duration="2359000" />
+      <workItem from="1556776994063" duration="8506000" />
     </task>
+    <task id="LOCAL-00001" summary="数据结构-图">
+      <created>1556779611947</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1556779611947</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="19380000" />
+    <option name="totallyTimeSpent" value="25527000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -223,24 +243,25 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="878" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.6072386" visible="true" weight="0.16487935" />
-      <window_info id="Structure" order="1" sideWeight="0.39276138" side_tool="true" visible="true" weight="0.16487935" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5160858" visible="true" weight="0.16487935" />
+      <window_info id="Structure" order="1" sideWeight="0.4839142" side_tool="true" visible="true" weight="0.16487935" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
       <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" sideWeight="0.50066936" side_tool="true" weight="0.15817694" />
-      <window_info anchor="bottom" id="Messages" />
+      <window_info id="Favorites" order="6" sideWeight="0.4839142" side_tool="true" weight="0.16487935" />
+      <window_info anchor="bottom" id="Messages" weight="0.3297587" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32931727" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32841823" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32931727" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32841823" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3297587" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" weight="0.32931727" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
@@ -258,13 +279,51 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="数据结构-图" />
+    <option name="LAST_COMMIT_MESSAGE" value="数据结构-图" />
+  </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/API/src/API.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/AbstractGraph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
+        <state relative-caret-position="935">
+          <caret line="153" column="15" selection-start-line="153" selection-start-column="15" selection-end-line="153" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#dfs#0;class#AbstractGraph#0" />
             <element signature="method#dfs#1;class#AbstractGraph#0" />
             <element signature="method#Tree#1;class#Tree#0;class#AbstractGraph#0" />
             <element signature="e#5118#5119#0" expanded="true" />
@@ -283,22 +342,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/Graph.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="17" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+        <state relative-caret-position="90">
+          <caret line="5" column="14" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Graph/TestBFS.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="126">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/API/src/API.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
+        <state relative-caret-position="246">
+          <caret line="28" column="43" selection-start-line="28" selection-start-column="43" selection-end-line="28" selection-end-column="43" />
         </state>
       </provider>
     </entry>

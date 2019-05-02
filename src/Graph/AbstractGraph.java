@@ -7,7 +7,6 @@ import java.util.List;
  * @author chr
  * @data 2019/5/1 10:49
  * @vision 1.0
- * @Description TODO
  */
 public abstract class AbstractGraph<V> implements Graph<V> {
 
@@ -36,6 +35,8 @@ public abstract class AbstractGraph<V> implements Graph<V> {
         for (int i = 0; i < numberOfVertices; i++) {
             neighbors.add(new ArrayList<Integer>());
         }
+
+        System.out.println(edges.length);
 
         for (int i = 0; i < edges.length; i++) {
             int u = edges[i][0];
@@ -68,7 +69,11 @@ public abstract class AbstractGraph<V> implements Graph<V> {
         }
     }
 
+    //广度优先遍历
+    //从顶点v开始遍历
     public Tree bfs(int v) {
+
+        //存储遍历顶点的顺序
         List<Integer> searchOrders = new ArrayList<>();
         int[] parent = new int[vertices.size()];
         //初始化
@@ -81,12 +86,15 @@ public abstract class AbstractGraph<V> implements Graph<V> {
 
         boolean[] isVisited = new boolean[vertices.size()];
 
-        queue.offer(v);
-        isVisited[v] = true;
+        queue.offer(v); //添加新元素进去
+        isVisited[v] = true; //设置为已访问
 
+        //该队列不为空则进入循环
         while (!queue.isEmpty()) {
-            int u = queue.poll();
-            searchOrders.add(u);
+            int u = queue.poll(); //删除队列的元素(即顶点)并返回
+            searchOrders.add(u); //将删除的该顶点u添加到遍历顶点的顺序列表中
+
+            //遍历出与顶点u相邻的其他顶点
             for (int w: neighbors.get(u)) {
                 if (!isVisited[w]) {
                     queue.offer(w);

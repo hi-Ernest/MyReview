@@ -4,7 +4,6 @@ package Graph;
  * @author chr
  * @data 2019/5/1 8:39
  * @vision 1.0
- * @Description TODO
  */
 public interface Graph<V> {
 
