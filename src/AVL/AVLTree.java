@@ -149,52 +149,66 @@ public class AVLTree<T extends Comparable<T>> {
         this.mRoot = remove(mRoot, key);
     }
 
-    private AVLTreeNode<T> remove(AVLTreeNode<T> root, T key) {
+    /**
+     * 根节点、
+     * @param treeNode
+     * @param key
+     * @return
+     */
+    private AVLTreeNode<T> remove(AVLTreeNode<T> treeNode, T key) {
 
-        if(root == null) {
+        if(treeNode == null) {
             return null;
         }
 
-        int judge = key.compareTo(root.key);
+        int judge = key.compareTo(treeNode.key);
 
         if (judge < 0) {
-            root.left = remove(root, key);
+            treeNode.left = remove(treeNode, key);
 
-            if (height(root.right) - height(root.left) == 2) {
-                AVLTreeNode<T> currentNode = root.right;
+            if (height(treeNode.right) - height(treeNode.left) == 2) {
+                AVLTreeNode<T> currentNode = treeNode.right;
 
                 if (height(currentNode.left) > height(currentNode.right)) {
                     //LL
-                    root = leftLeftRotation(root);
+                    treeNode = leftLeftRotation(treeNode);
                 }else {
                     //LR
-                    root = leftRightRotation(root);
+                    treeNode = leftRightRotation(treeNode);
                 }
             }
         }else if (judge > 0) {
-            root.right = remove(root, key);
+            treeNode.right = remove(treeNode, key);
 
-            if (height(root.left) - height(root.right) == 2) {
-                AVLTreeNode<T> currentNode = root.left;
+            if (height(treeNode.left) - height(treeNode.right) == 2) {
+                AVLTreeNode<T> currentNode = treeNode.left;
 
 
                 if (height(currentNode.right) > height(currentNode.left)) {
                     //RL
-                    root = rightRightRotation(root);
+                    treeNode = rightRightRotation(treeNode);
                 }else {
                     //RL
-                    root = rightLeftRotation(root);
+                    treeNode = rightLeftRotation(treeNode);
                 }
             }
-        }else if (root.right != null && root.left != null) {
+        }else if (treeNode.right != null && treeNode.left != null) {
 
             //looking for a replacement point
-            root.key = findMin(root.right).key;
+            treeNode.key = findMin(treeNode.right).key;
+
+
+            treeNode.right = remove(treeNode.right, treeNode.key);
+        }
+        else{
+
+            treeNode = (treeNode.left != null)? treeNode.left : treeNode.right;
         }
 
+        treeNode.height = max(height(treeNode.left), height(treeNode.right)) + 1;
 
 
-        return root;
+        return treeNode;
     }
 
     private AVLTreeNode<T> findMin(AVLTreeNode<T> right) {

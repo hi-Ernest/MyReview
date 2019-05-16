@@ -134,7 +134,7 @@ public class BinaryTree<E extends Comparable<E>>
 
 
     /**
-     * @TODO
+     * 删除操作
      * @param e
      * @return
      */
@@ -153,26 +153,89 @@ public class BinaryTree<E extends Comparable<E>>
                 current = current.right;
             }
             else
-                break;
+                break;//element is in the tree pointed by current
         }
 
         if (current == null)
             return false;
 
+        //修改
+        if (current.left != null && current.right != null) {
+            //获取后继节点
+            TreeNode<E> successor = successor(current);
+
+            //两者交换位置
+
+
+            //将删除节点设置为后继节点
+
+        }
+
+
+        //当前节点没有左节点
         if (current.left == null) {
             if (parent == null) {
                 root = current.right;
             }
             else {
-                if (e.compareTo(parent.element) > 0)
+                if (e.compareTo(parent.element) < 0)
                     parent.left = current.right;
                 else
-                    parent.right = current.left;
+                    parent.right = current.right;
+            }
+        }else {
+            //the current node has a left node
+            //locate thr rightmost node in left subtree of current node and also its parent
+            TreeNode<E> parentOfRightMost = current;
+            TreeNode<E> rightMost = current.left;
+
+            while (rightMost != null) {
+                parentOfRightMost = rightMost;
+                rightMost = rightMost.right;
+            }
+
+            current.element = rightMost.element;
+
+            if (parentOfRightMost.right == rightMost) {
+                parentOfRightMost.right = rightMost.left;
+            }else {
+                parentOfRightMost.left = rightMost.left;
             }
         }
 
+        size--;
         return true;
     }
+
+    private TreeNode<E> successor(TreeNode<E> current) {
+
+        //判断current节点是否有右子树、节点等
+        if (current.right != null) {
+            return minimum(current.right);
+        }
+
+        //没有右孩子则
+        //1)current 是一个左孩子,则后继节点是它的父节点
+        //2)current 是一个右孩子,
+//        TreeNode<E> pa =
+        while (current != null) {
+            current = current.left;
+        }
+
+        return current;
+
+    }
+
+    //查找到最小的节点：返回以node为根节点的最小节点
+    private TreeNode<E> minimum(TreeNode<E> node) {
+
+        while (node.left != null) {
+            node = node.left;
+        }
+
+        return node;
+    }
+
 }
 
 
