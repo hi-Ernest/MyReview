@@ -1,7 +1,7 @@
 package BST;
 
 
-import java.util.ArrayList;
+import java.util.*;
 
 public class BinaryTree<E extends Comparable<E>>
     extends AbstractTree<E> {
@@ -90,6 +90,31 @@ public class BinaryTree<E extends Comparable<E>>
 
     //postorder traversal...
     //preordre traversal...
+
+
+    public List<List<E>> LevelOrderBottom(TreeNode root) {
+        List<List<E>> tollist = new ArrayList<>();
+        List<E> list = new ArrayList<>();
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.offer(root);
+
+        while (!queue.isEmpty()) {
+            TreeNode current = queue.poll();
+            list.add((E) current.element);
+            if ((root = root.left) != null) {
+                queue.offer(root);
+            }
+            if ((root = root.right) != null) {
+                queue.offer(root);
+            }
+            tollist.add(list);
+        }
+
+        return tollist;
+    }
+
+
 
 
 
@@ -236,6 +261,9 @@ public class BinaryTree<E extends Comparable<E>>
         return node;
     }
 
+    public static void main(String[] args) {
+
+    }
 }
 
 
